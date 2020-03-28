@@ -6,159 +6,77 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constranit1"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:background="#F44336"
-        app:layout_constraintBottom_toTopOf="@id/constranit2"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/tv1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:background="#4CAF50"
-            android:gravity="center"
-            android:text="1"
-            android:textColor="#ffff"
-            android:textSize="50dp"
-            app:layout_constraintHorizontal_weight="2"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@id/constranit1_1" />
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constranit1_1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            app:layout_constraintHorizontal_weight="8"
-            app:layout_constraintLeft_toRightOf="@id/tv1"
-            app:layout_constraintRight_toRightOf="parent">
-
-            <TextView
-                android:id="@+id/tv3"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:gravity="center"
-                android:text="3"
-                android:textColor="#ffff"
-                android:textSize="50dp"
-                app:layout_constraintBottom_toTopOf="@id/tv4"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/tv4"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:background="#FF5722"
-                android:gravity="center"
-                android:text="4"
-                android:textColor="#ffff"
-                android:textSize="50dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv3" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constranit2"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:background="#00BCD4"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+    <TextView
+        android:id="@+id/blue"
+        android:textSize="50dp"
+        android:textColor="#ffff"
+        android:text="Blue"
+        android:background="#2196F3"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/constranit1">
-
-        <TextView
-            android:id="@+id/tv2"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:background="#CDDC39"
-            android:gravity="center"
-            android:text="2"
-            android:textColor="#FFFF"
-            android:textSize="50dp"
-            app:layout_constraintHorizontal_weight="2"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@id/constranit2_1" />
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constranit2_1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            app:layout_constraintHorizontal_weight="6"
-            app:layout_constraintLeft_toRightOf="@id/tv2"
-            app:layout_constraintRight_toLeftOf="@id/constranit2_2">
-
-            <TextView
-                android:id="@+id/tv5"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:gravity="center"
-                android:text="5"
-                android:textColor="#ffff"
-                android:textSize="50dp"
-                app:layout_constraintBottom_toTopOf="@id/tv6"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/tv6"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:background="#FF5722"
-                android:gravity="center"
-                android:text="6"
-                android:textColor="#ffff"
-                android:textSize="50dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv5" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constranit2_2"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            app:layout_constraintHorizontal_weight="2"
-            app:layout_constraintLeft_toRightOf="@id/constranit2_1"
-            app:layout_constraintRight_toRightOf="parent">
-
-            <TextView
-                android:id="@+id/tv7"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:background="#9C27B0"
-                android:gravity="center"
-                android:text="7"
-                android:textColor="#ffff"
-                android:textSize="50dp"
-                app:layout_constraintBottom_toTopOf="@id/tv8"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/tv8"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:background="#FFC107"
-                android:gravity="center"
-                android:text="8"
-                android:textColor="#ffff"
-                android:textSize="50dp"
-                app:layout_constraintBottom_toTopOf="@id/tv9"
-                app:layout_constraintTop_toBottomOf="@id/tv7"
-
-            <TextView
-                android:id="@+id/tv9"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:background="#FF5722"
-                android:gravity="center"
-                android:text="4"
-                android:textColor="#ffff"
-                android:textSize="50dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv8" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintLeft_toLeftOf="@id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/green"
+        android:textSize="50dp"
+        android:textColor="#ffff"
+        android:text="Green"
+        android:background="#009688"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/blue"
+        app:layout_constraintLeft_toLeftOf="@id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/red"
+        android:textSize="50dp"
+        android:textColor="#ffff"
+        android:text="Red"
+        android:background="#F44336"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/green"
+        app:layout_constraintLeft_toLeftOf="@id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/orance"
+        android:textSize="50dp"
+        android:textColor="#ffff"
+        android:text="Orance"
+        android:background="#FF9800"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/blue"
+        app:layout_constraintLeft_toLeftOf="@id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/gray"
+        android:textSize="50dp"
+        android:textColor="#ffff"
+        android:text="Gray"
+        android:background="#A59885"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/orance"
+        app:layout_constraintLeft_toLeftOf="@id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="50dp"
+        android:textColor="#ffff"
+        android:text="Pink"
+        android:background="#FF00A1"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/gray"
+        app:layout_constraintLeft_toLeftOf="@id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
