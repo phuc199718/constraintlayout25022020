@@ -104,8 +104,8 @@
                     android:textColor="#FFFF"
                     android:textSize="50dp"
                     android:gravity="center"
-                    app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintLeft_toRightOf="@id/tv4"
+                    app:layout_constraintRight_toRightOf="parent"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"/>
 
